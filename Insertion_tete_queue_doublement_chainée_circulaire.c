@@ -79,36 +79,6 @@ void afficherListe(Noeud* tete) {
     printf("\n");
 }
 
-// Fonction pour afficher la liste dans le sens inverse
-void afficherListeInverse(Noeud* tete) {
-    if (tete == NULL) {
-        printf("Liste vide\n");
-        return;
-    }
-
-    Noeud* temp = tete->precedent;
-    printf("Liste (sens inverse): ");
-    do {
-        printf("%d ", temp->donnee);
-        temp = temp->precedent;
-    } while (temp != tete->precedent);
-    printf("\n");
-}
-
-// Fonction pour libérer la mémoire
-void libererListe(Noeud* tete) {
-    if (tete == NULL) return;
-
-    Noeud* temp = tete;
-    Noeud* suivant;
-
-    do {
-        suivant = temp->suivant;
-        free(temp);
-        temp = suivant;
-    } while (temp != tete);
-}
-
 // Fonction principale
 int main() {
     Noeud* tete = NULL;
@@ -120,9 +90,8 @@ int main() {
         printf("\n--- MENU ---\n");
         printf("1. Inserer en tete\n");
         printf("2. Inserer en queue\n");
-        printf("3. Afficher la liste (sens direct)\n");
-        printf("4. Afficher la liste (sens inverse)\n");
-        printf("5. Quitter\n");
+        printf("3. Afficher la liste\n");
+        printf("4. Quitter\n");
         printf("Votre choix: ");
         scanf("%d", &choix);
 
@@ -145,14 +114,6 @@ int main() {
                 afficherListe(tete);
                 break;
 
-            case 4:
-                afficherListeInverse(tete);
-                break;
-
-            case 5:
-                libererListe(tete);
-                printf("Memoire liberee. Au revoir!\n");
-                return 0;
 
             default:
                 printf("Choix invalide! Veuillez reessayer.\n");
