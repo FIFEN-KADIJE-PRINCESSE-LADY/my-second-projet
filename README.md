@@ -10,11 +10,11 @@
 Notre projet a été développé en collaboration. 
 | Nom du Membre | Matricule | Contribution / Responsabilité |
 | *FIFEN-KADUE-PRINCESSE-LADY* | [24G2107] | *Coordination*, Tests Unitaires, Documentation Avancée du README.md. |
-| *[KAMGA NGOKA HENRYKE LUDOVIK]* | [24F2750] | Développement et validation des Listes Chaînées *Triées* (Doubles). |
+| *[KAMGA NGOKA HENRYKE LUDOVIK]* | [24F2750] | Développement et validation des Listes Chaînées *Triées* (Simplement chainée). |
 | *[TCHATCHOUA DAMI CLAUDIA]* | [24G2407] | Développement et validation des Listes *Circulaires* (Insertions Tête/Queue Doublement Chaînée). |
 | *[BANDE FOTGNA ALEXIE ROSTELLE]* | [24G2750] | Développement et validation des Listes *Circulaires* (Insertions Tête/Queue Simplement Chaînée). |
-| *[NGUELEFACK PRINCESSE]* | [24G2575] | Développement et validation des Listes Chaînées *Triées* (Simples). |
-| *[TAPA FOTSO PASQUIN]* | [24G2868] |Développement et validation des Listes *Circulaires* (Insertions Tête/Queue Simplement Chaînée). |
+| *[NGUELEFACK PRINCESSE]* | [24G2575] | Développement et validation des Listes Chaînées *Triées* (Doublement chainée). |
+| *[TAPA FOTSO PASQUIN]* | [24G2868] |Développement et validation des Listes (Suppression d'ocurrence). |
 
 
 ## Répertoire des Fichiers Source
@@ -24,8 +24,9 @@ Chaque fichier C contient une *fonction main()* pour des tests d'exécution indi
 | Fichier C | Type de Structure | Rôle de l'Opération |
 | *insertion_trie_simple.c* | Liste Simplement Chaînée | Assure que la liste reste *triée* après l'insertion (O(n)). |
 | *insertion_trie_double.c* | Liste Doublement Chaînée | Assure que la liste reste *triée* ; mise à jour de *deux* pointeurs adjacents (suiv et prec). |
-| *insertion_tete_queue_circulaire_simplement_chainée* | Liste Simplement Chaînée Circulaire | Insertion en *Tête* (Opération O(n) pour trouver la queue, ou O(1) si un pointeur sur la queue est maintenu). |
-| *insertion_tete_queue_circulaire_double.chainée* | Liste Doublement Chaînée Circulaire | Insertion en *Tête* (Opération O(1)). |
+| *insertion_tete_queue_circulaire_simplement_chainée.c* | Liste Simplement Chaînée Circulaire | Insertion en *Tête* (Opération O(n) pour trouver la queue, ou O(1) si un pointeur sur la queue est maintenu). |
+| *insertion_tete_queue_circulaire_double.chainée.c* | Liste Doublement Chaînée Circulaire | Insertion en *Tête* (Opération O(1)). |
+| *suppresion_occurence.c* |Liste simplement chainée
 
 ##  Instructions de Compilation
 
